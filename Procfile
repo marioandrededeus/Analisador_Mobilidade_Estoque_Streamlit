@@ -1,0 +1,1 @@
+web: sh setup.sh && streamlit run analisador_estoque_app.py
