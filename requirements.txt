@@ -67,7 +67,7 @@ prometheus-client==0.8.0
 prompt-toolkit==3.0.5
 protobuf==3.12.2
 ptyprocess==0.6.0
-py==1.8.2
+py==1.10.0
 pybase64==1.0.1
 pycparser==2.20
 pydeck==0.4.0b2
