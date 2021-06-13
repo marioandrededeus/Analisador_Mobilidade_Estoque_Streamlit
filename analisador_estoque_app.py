@@ -38,8 +38,7 @@ def main():
         data=pd.DataFrame({'Linha_Familia':[''],'Codigo':[''],'Descrição':[''],'Data_Ultima_Venda':[''],'Qtd_Estoque':[''],'Custo_Total':['']} )
         st.markdown('O arquivo CSV a ser carregado deve conter as seguintes colunas: ')
         st.dataframe(data)
-        file = st.file_uploader('Selecione o arquivo CSV contendo as colunas acima descritas',type='csv',
-                            encoding='latin1')
+        file = st.file_uploader('Selecione o arquivo CSV contendo as colunas acima descritas',type='csv')
     if file is not None:
         estoque = pd.read_csv(file, sep=";", decimal=",", encoding="Latin1", header=0,
                               names=['linha', 'codigo', 'descricao', 'ultima_venda', 'estoque_atual', 'custo_estoque'])
